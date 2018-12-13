@@ -17,6 +17,13 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^3.0.7"
+    "electron": "^3.0.7",
+    "electron-rebuild": "^1.8.2"
+  },
+  "dependencies": {
+    "filereader": "^0.10.3",
+    "fs": "0.0.1-security",
+    "node-fetch": "^2.3.0",
+    "whatwg-fetch": "^3.0.0"
   }
 }
