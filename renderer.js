@@ -40,9 +40,10 @@ var parseTermFiles = function() {
 var createTerm = function(word, definiton) {
   var termList = document.getElementById("terms");
   var term = document.createElement("LI");
-  term.innerText = `${word}: ${definiton.trim()}`;
+  term.innerText = `${word}: \n ${definiton.trim()} \n \n`;
 
   termList.appendChild(term);
+
 }
 
 var getDefinitions = function(word) {
@@ -73,8 +74,9 @@ var getDefinitions = function(word) {
         console.log(finalDefinition);
         createTerm(word, finalDefinition);
       }
+      // console.log("INNER");
+      // console.log(document.body.innerText);
     })
 }
 
 parseTermFiles();
-
